@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Raw Resources ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>IronOre</defName>
+    <label>Iron Ore</label>
+    <description>Basic Iron Ore, can be smelted into Steel/Steel Ingots.</description>
+    <graphicData>
+      <texPath>Ores/IronOre</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>2.0</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+	  <Flammability>1.0</Flammability>
+	  <Beauty>-2</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+	 <stackLimit>500</stackLimit>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>CoalOre</defName>
+    <label>coal</label>
+    <description>Doesn't look too nice, but it's good generator fuel.</description>
+    <graphicData>
+      <texPath>Ores/CoalOre</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>2.0</MarketValue>
+	  <MaxHitPoints>150</MaxHitPoints>
+	  <Flammability>1.0</Flammability>
+	  <Beauty>-2</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+	 <stackLimit>500</stackLimit>
+  </ThingDef>
+
+  <!--=============== Ingots/Alloys ====================-->  
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>SteelIngot</defName>
+    <label>Steel Ingot</label>
+    <description>Iron Alloy, mixed with carbon.</description>
+    <graphicData>
+      <texPath>Ingot/Ingot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <color>(255,255,255)</color>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>2.0</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>1</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1</BluntDamageMultiplier>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>4</deepCommonality>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>1.00</commonality>
+      <constructEffect>ConstructMetal</constructEffect>
+      <color>(102,102,105)</color>
+      <soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+        <Beauty>1</Beauty>
+        <Flammability>0.2</Flammability>
+        <MeleeWeapon_Cooldown>1</MeleeWeapon_Cooldown>
+      </statFactors>
+      <smeltable>true</smeltable>
+    </stuffProps>
+  </ThingDef>
+
+</Defs>
