@@ -44,8 +44,6 @@
     </building>
   </ThingDef>
   
-  <!--============================ Iron Ore ===============================-->
-  
  <ThingDef ParentName="RockBase">
     <defName>MineableSteel</defName>
     <label>Compacted Steel</label>
@@ -71,6 +69,8 @@
       </mineableScatterLumpSizeRange>
     </building>
   </ThingDef>
+  
+  <!--============================ Iron Ore ===============================-->
   
  <ThingDef ParentName="RockBase">
     <defName>MineableIron</defName>
@@ -115,6 +115,58 @@
     <building>
       <isResourceRock>true</isResourceRock>
       <mineableThing>CoalOre</mineableThing>
+      <mineableYield>30</mineableYield>
+      <mineableScatterCommonality>1</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>8</min>
+        <max>10</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+   <ThingDef ParentName="RockBase">
+    <defName>MineableCopper</defName>
+    <label>Copper Ore</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+	  <color>(114,92,83)</color>
+	  <colorTwo>(255,201,14)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <description>A rich composite of Copper Ore. Used in creation of alloys.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>CopperOre</mineableThing>
+      <mineableYield>30</mineableYield>
+      <mineableScatterCommonality>1</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>8</min>
+        <max>10</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+
+   <ThingDef ParentName="RockBase">
+    <defName>MineableTin</defName>
+    <label>Tin Ore</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+	  <color>(114,92,83)</color>
+	  <colorTwo>(195,195,195)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <description>A rich composite of Tin Ore. Used in creation of alloys.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>TinOre</mineableThing>
       <mineableYield>30</mineableYield>
       <mineableScatterCommonality>1</mineableScatterCommonality>
       <mineableScatterLumpSizeRange>

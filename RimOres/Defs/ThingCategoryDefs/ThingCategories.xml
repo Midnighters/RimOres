@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+  <ThingCategoryDef>
+    <defName>Root</defName>
+    <label>root</label>
+  </ThingCategoryDef>
+
+    <!-- Ores -->
+
+  <ThingCategoryDef>
+    <defName>Ores</defName>
+    <label>ores</label>
+    <parent>Root</parent>
+  </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>IronOre</defName>
+      <label>Iron Ore</label>
+      <parent>Ores</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Ores/IronOre</iconPath>
+    </ThingCategoryDef>
+	
+    <ThingCategoryDef>
+      <defName>CopperOre</defName>
+      <label>Copper Ore</label>
+      <parent>Ores</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Ores/CopperOre</iconPath>
+    </ThingCategoryDef>
+	
+    <ThingCategoryDef>
+      <defName>TinOre</defName>
+      <label>Tin Ore</label>
+      <parent>Ores</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Ores/TinOre</iconPath>
+    </ThingCategoryDef>
+
+
+</ThingCategoryDefs>
